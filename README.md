@@ -1,11 +1,11 @@
-# DeFi Geo-Block Bypass Extension
+# Solana DeFi Geoblock Bypass Extension
 
 A Chrome extension that helps you access DeFi platforms from geo-blocked regions.
 
 ## Supported Platforms
 
-- **Drift Protocol** (app.drift.trade)
-- **Kamino Finance** (app.kamino.finance)
+- **Drift Protocol** (drift.trade)
+- **Kamino Finance** (kamino.com)
 
 ## Installation
 
