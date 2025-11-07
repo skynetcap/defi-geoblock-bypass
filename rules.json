@@ -1,0 +1,31 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "url": "data:application/json,RU"
+      }
+    },
+    "condition": {
+      "urlFilter": "https://geolocation.drift-labs.workers.dev/",
+      "resourceTypes": ["xmlhttprequest"]
+    }
+  },
+  {
+    "id": 2,
+    "priority": 999999,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "url": "data:application/json,%7B%22country%22%3A%22Mexico%22%2C%22countryCode%22%3A%22MX%22%2C%22status%22%3A%22success%22%7D"
+      }
+    },
+    "condition": {
+      "urlFilter": "||sentinel.kamino.finance",
+      "resourceTypes": ["xmlhttprequest"]
+    }
+  }
+]
+
