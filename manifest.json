@@ -1,6 +1,6 @@
 {
   "name": "Solana DeFi Geoblock Bypass",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": "Michael Morrell <michael@cosmic.markets>",
   "description": "Access Drift Protocol and Kamino Finance from geo-blocked regions on Solana.",
   "manifest_version": 3,
@@ -10,7 +10,9 @@
     "https://geolocation.drift-labs.workers.dev/*",
     "https://app.kamino.finance/*",
     "https://kamino.com/*",
-    "https://sentinel.kamino.finance/*"
+    "https://sentinel.kamino.finance/*",
+    "https://app.phoenix.trade/*",
+    "https://ipapi.co/*"
   ],
   "declarative_net_request": {
     "rule_resources": [

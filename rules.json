@@ -26,6 +26,21 @@
       "urlFilter": "||sentinel.kamino.finance",
       "resourceTypes": ["xmlhttprequest"]
     }
+  },
+  {
+    "id": 3,
+    "priority": 999998,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "url": "data:application/json,%7B%22ip%22%3A%22133.205.64.128%22%2C%22network%22%3A%22133.205.64.0%2F22%22%2C%22version%22%3A%22IPv4%22%2C%22city%22%3A%22Tokyo%22%2C%22region%22%3A%22Tokyo%22%2C%22region_code%22%3A%2213%22%2C%22country%22%3A%22JP%22%2C%22country_name%22%3A%22Japan%22%2C%22country_code%22%3A%22JP%22%2C%22country_code_iso3%22%3A%22JPN%22%2C%22country_capital%22%3A%22Tokyo%22%2C%22country_tld%22%3A%22.jp%22%2C%22continent_code%22%3A%22AS%22%2C%22in_eu%22%3Afalse%2C%22postal%22%3A%22100-0001%22%2C%22latitude%22%3A35.6762%2C%22longitude%22%3A139.6503%2C%22timezone%22%3A%22Asia%2FTokyo%22%2C%22utc_offset%22%3A%22%2B0900%22%2C%22country_calling_code%22%3A%22%2B81%22%2C%22currency%22%3A%22JPY%22%2C%22currency_name%22%3A%22Yen%22%2C%22languages%22%3A%22ja%22%2C%22country_area%22%3A377835%2C%22country_population%22%3A126451398%2C%22asn%22%3A%22AS2516%22%2C%22org%22%3A%22KDDI-NET%22%7D"
+      }
+    },
+    "condition": {
+      "urlFilter": "||ipapi.co/json",
+      "initiatorDomains": ["app.phoenix.trade"],
+      "resourceTypes": ["xmlhttprequest"]
+    }
   }
 ]
 
