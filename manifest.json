@@ -12,7 +12,9 @@
     "https://kamino.com/*",
     "https://sentinel.kamino.finance/*",
     "https://app.phoenix.trade/*",
-    "https://ipapi.co/*"
+    "https://ipapi.co/*",
+    "https://mainnet.zklighter.elliot.ai/*",
+    "https://app.lighter.xyz/*"
   ],
   "declarative_net_request": {
     "rule_resources": [

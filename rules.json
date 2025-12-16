@@ -41,6 +41,20 @@
       "initiatorDomains": ["app.phoenix.trade"],
       "resourceTypes": ["xmlhttprequest"]
     }
+  },
+  {
+    "id": 4,
+    "priority": 999999,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "url": "data:application/json,%7B%22code%22%3A200%7D"
+      }
+    },
+    "condition": {
+      "urlFilter": "||mainnet.zklighter.elliot.ai/api/v1/geoLocation*",
+      "resourceTypes": ["xmlhttprequest"]
+    }
   }
 ]
 
