@@ -7,7 +7,8 @@ A Chrome extension that helps you access DeFi platforms from geo-blocked regions
 - **Drift Protocol** (drift.trade)
 - **Kamino Finance** (kamino.com)
 - **Phoenix Trade** (phoenix.trade)
-- **Lighter** (UI-only) (lighter.xyz)
+- **Lighter** (read-only) (lighter.xyz)
+- **Hyperliquid** (read-only) (hyperliquid.xyz)
 
 ## Installation
 
@@ -23,6 +24,7 @@ The extension intercepts geolocation API requests and redirects them to return a
 - Kamino Finance: Returns "MX" (Mexico)
 - Phoenix Trade: Returns "JP" (Japan)
 - Lighter: Returns "200" (OK Response)
+- Hyperliquid: Returns "ipAllowed: true"
 
 ## Files
 
