@@ -55,6 +55,21 @@
       "urlFilter": "||mainnet.zklighter.elliot.ai/api/v1/geoLocation*",
       "resourceTypes": ["xmlhttprequest"]
     }
+  },
+  {
+    "id": 5,
+    "priority": 1000000,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "url": "data:application/json,%7B%22blocked%22%3Afalse%2C%22countryCode%22%3A%22RU%22%7D"
+      }
+    },
+    "condition": {
+      "urlFilter": "||www.phoenix.trade/api/geo/status",
+      "initiatorDomains": ["phoenix.trade", "www.phoenix.trade", "app.phoenix.trade"],
+      "resourceTypes": ["xmlhttprequest"]
+    }
   }
 ]
 
