@@ -1,8 +1,8 @@
 {
   "name": "Solana DeFi Geoblock Bypass",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "author": "Michael Morrell <michael@cosmic.markets>",
-  "description": "Access Drift Protocol and Kamino Finance from geo-blocked regions on Solana.",
+  "description": "Access Solana DeFi platforms from geo-blocked regions.",
   "manifest_version": 3,
   "permissions": ["declarativeNetRequest"],
   "host_permissions": [
@@ -19,7 +19,9 @@
     "https://app.lighter.xyz/*",
     "https://app.hyperliquid.xyz/*",
     "https://hyperliquid.xyz/*",
-    "https://api-ui.hyperliquid.xyz/*"
+    "https://api-ui.hyperliquid.xyz/*",
+    "https://gmtrade.xyz/*",
+    "https://www.gmtrade.xyz/*"
   ],
   "content_scripts": [
     {
@@ -29,6 +31,15 @@
         "https://api-ui.hyperliquid.xyz/*"
       ],
       "js": ["hyperliquid-bypass.js"],
+      "run_at": "document_start",
+      "world": "MAIN"
+    },
+    {
+      "matches": [
+        "https://gmtrade.xyz/*",
+        "https://www.gmtrade.xyz/*"
+      ],
+      "js": ["gmtrade-bypass.js"],
       "run_at": "document_start",
       "world": "MAIN"
     }

@@ -9,6 +9,7 @@ A Chrome extension that helps you access DeFi platforms from geo-blocked regions
 - **Phoenix Trade** (phoenix.trade)
 - **Lighter** (read-only) (lighter.xyz)
 - **Hyperliquid** (read-only) (hyperliquid.xyz)
+- **GM Trade** (gmtrade.xyz)
 
 ## Installation
 
@@ -25,6 +26,7 @@ The extension intercepts geolocation API requests and redirects them to return a
 - Phoenix Trade: Returns "JP" (Japan)
 - Lighter: Returns "200" (OK Response)
 - Hyperliquid: Returns "ipAllowed: true"
+- GM Trade: Forces `sessionStorage.country` to "RU"
 
 ## Files
 
